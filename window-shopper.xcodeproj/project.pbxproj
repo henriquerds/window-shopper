@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1920EF21513DF200541139 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1920EE21513DF200541139 /* CurrencyTextField.swift */; };
 		BE47AF8D2151372E0098397F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47AF8C2151372E0098397F /* AppDelegate.swift */; };
-		BE47AF8F2151372E0098397F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47AF8E2151372E0098397F /* ViewController.swift */; };
+		BE47AF8F2151372E0098397F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE47AF8E2151372E0098397F /* MainViewController.swift */; };
 		BE47AF922151372E0098397F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE47AF902151372E0098397F /* Main.storyboard */; };
 		BE47AF94215137300098397F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47AF93215137300098397F /* Assets.xcassets */; };
 		BE47AF97215137300098397F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE47AF95215137300098397F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1920EE21513DF200541139 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		BE47AF892151372E0098397F /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE47AF8C2151372E0098397F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE47AF8E2151372E0098397F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE47AF8E2151372E0098397F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE47AF912151372E0098397F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE47AF93215137300098397F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE47AF96215137300098397F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1920EC21513C5D00541139 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE47AF8E2151372E0098397F /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE1920ED21513DBF00541139 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE1920EE21513DF200541139 /* CurrencyTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BE47AF802151372E0098397F = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		BE47AF8B2151372E0098397F /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				BE1920ED21513DBF00541139 /* Views */,
+				BE1920EC21513C5D00541139 /* Controller */,
 				BE47AF8C2151372E0098397F /* AppDelegate.swift */,
-				BE47AF8E2151372E0098397F /* ViewController.swift */,
 				BE47AF902151372E0098397F /* Main.storyboard */,
 				BE47AF93215137300098397F /* Assets.xcassets */,
 				BE47AF95215137300098397F /* LaunchScreen.storyboard */,
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE47AF8F2151372E0098397F /* ViewController.swift in Sources */,
+				BE1920EF21513DF200541139 /* CurrencyTextField.swift in Sources */,
+				BE47AF8F2151372E0098397F /* MainViewController.swift in Sources */,
 				BE47AF8D2151372E0098397F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
