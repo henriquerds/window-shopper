@@ -12,6 +12,24 @@ import UIKit
 
 class CurrencyTextField: UITextField {
     
+    override func draw(_ rect: CGRect) { //don't ever implement this empty
+        
+        let size: CGFloat = 20 //use CGFLoat because if we don't specifcy it will default to Double and in draw you need to use CGFloat
+        let currencyLabel = UILabel(frame: CGRect(x: 10, y: (frame.size.height / 2) - size / 2, width: size, height: size))
+        currencyLabel.backgroundColor = #colorLiteral(red: 0.8659815192, green: 0.8608341813, blue: 0.869938612, alpha: 0.8034567637)
+        currencyLabel.textAlignment = .center
+        currencyLabel.textColor = #colorLiteral(red: 0.2436864078, green: 0.2422441244, blue: 0.2447991967, alpha: 1)
+        currencyLabel.layer.cornerRadius = 5.0
+        currencyLabel.clipsToBounds = true
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = .current
+        currencyLabel.text = formatter.currencySymbol
+        addSubview(currencyLabel)
+        
+    }
+    
     override func prepareForInterfaceBuilder() {
         customizeView()
     }
@@ -26,6 +44,8 @@ class CurrencyTextField: UITextField {
         backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 0.246869649)
         layer.cornerRadius = 5.0
         textAlignment = .center
+        
+        clipsToBounds = true
         
         
         if let p = placeholder {
